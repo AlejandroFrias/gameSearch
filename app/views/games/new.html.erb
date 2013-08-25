@@ -1,0 +1,16 @@
+<%= form_for :game, url: games_path do |f| %>
+<legend>Create a Game</legend>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :instructions %><br>
+    <%= f.text_area :instructions %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
